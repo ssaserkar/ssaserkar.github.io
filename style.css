@@ -82,3 +82,11 @@ ul li:before {
   animation-delay: 0.5s;
 }
 
+section {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+section:target {
+  opacity: 1;
+}
