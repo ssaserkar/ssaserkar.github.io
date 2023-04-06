@@ -20,17 +20,17 @@
       <h1>Soham Shantanu Aserkar</h1>
       <nav>
         <ul>
-          <li><a href="#education">Education</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#publications">Publications</a></li>
-          <li><a href="#leadership">Leadership</a></li>
+          <li><a href="#" onclick="toggleVisibility('education')">Education</a></li>
+          <li><a href="#" onclick="toggleVisibility('skills')">Skills</a></li>
+          <li><a href="#" onclick="toggleVisibility('projects')">Projects</a></li>
+          <li><a href="#" onclick="toggleVisibility('experience')">Experience</a></li>
+          <li><a href="#" onclick="toggleVisibility('publications')">Publications</a></li>
+            <li><a href="#" onclick="toggleVisibility('leadership')">Leadership</a></li>
         </ul>
       </nav>
     </header>
     <main>
-      <section id="education">
+      <section id="education" class="hidden">
         <h2>Education</h2>
         <ul>
           <li><strong>Worcester Polytechnic Institute (WPI), Worcester, MA, USA</strong></li>
@@ -45,7 +45,7 @@
           </ul>
         </ul>
       </section>
-      <section id="skills">
+      <section id="skills" class="hidden">
         <h2>Skills</h2>
         <ul>
           <li>Python | C/C++ | ROS/ROS2/Gazebo | MATLAB & Simulink | TensorFlow, PyTorch | Controls</li>
@@ -94,7 +94,7 @@
         <li>Achieved a rank of 33 in the National Level Competition; being the only team to use image processing for cross detection</li>
       </ul>
   </section>
-  <section id="experience">
+  <section id="experience" class="hidden">
     <h2>Experience</h2>
     <ul>
       <li><strong>Graduate Research Assistant | SMERL | WPI</strong></li>
@@ -124,14 +124,14 @@
 </ul>
 </ul>
 </section>
-<section id="publications">
+<section id="publications" class="hidden">
 <h2>Publications</h2>
 <ul>
 <li>Published “Maintenance of Automobiles by predicting System Fault Severity Using Machine Learning” Springer Jan 2021</li>
 <li>Presented “Trajectory Planning and Control of Autogyro Precision Payload Airdrop using Machine Learning” Dec 2019 AIAA Region VII – Australia/International Student Conference</li>
 </ul>
 </section>
-<section id="leadership">
+<section id="leadership" class="hidden">
 <h2>Leadership</h2>
 <ul>
 <li><strong>General Secretary | Student Council, MIT College of Engineering, India</strong></li>
@@ -146,6 +146,15 @@
 </ul>
 </section>
 </main>
-<script src="script.js"></script>
+<script>
+      function toggleVisibility(id) {
+        var el = document.getElementById(id);
+        if (el.classList.contains('hidden')) {
+          el.classList.remove('hidden');
+        } else {
+          el.classList.add('hidden');
+        }
+      }
+    </script>
   </body>
 </html>
