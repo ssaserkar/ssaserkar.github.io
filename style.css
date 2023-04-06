@@ -1,92 +1,47 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
+/* style.css */
 body {
   font-family: Arial, sans-serif;
-  font-size: 16px;
+  margin: 0;
 }
 
-header {
-  background-color: #333;
-  color: #fff;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem;
+h1 {
+  text-align: center;
+  padding: 20px;
+}
+
+#menu {
+  display: none;
+}
+
+#menu.active {
+  display: block;
 }
 
 nav ul {
-  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-nav ul li {
-  margin-left: 1rem;
+nav li {
+  margin: 10px 0;
 }
 
-nav ul li:first-child {
-  margin-left: 0;
-}
-
-nav ul li a {
-  color: #fff;
+nav a {
+  color: #333;
   text-decoration: none;
 }
 
-main {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 1rem;
+nav a:hover {
+  color: #666;
 }
 
-section {
-  margin-bottom: 2rem;
-}
+@media screen and (min-width: 768px) {
+  #toggle-btn {
+    display: none;
+  }
 
-section h2 {
-  margin-bottom: 1rem;
-}
-
-ul li {
-  margin-bottom: 0.5rem;
-}
-
-ul li strong {
-  font-weight: bold;
-}
-
-ul li:before {
-  content: "\2022";
-  margin-right: 0.5rem;
-  color: #333;
-}
-/* Define the animation */
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-
-/* Apply the animation to the element */
-.fadeIn {
-  animation-name: fadeIn;
-  animation-duration: 1s;
-  animation-timing-function: ease-in-out;
-  animation-fill-mode: forwards;
-  opacity: 0;
-}
-
-/* Add a delay to the animation */
-.fadeIn-delay {
-  animation-delay: 0.5s;
-}
-
-section {
-  opacity: 0;
-  transition: opacity 1s ease-in-out;
-}
-
-section:target {
-  opacity: 1;
+  #menu {
+    display: block;
+  }
 }
