@@ -3,7 +3,8 @@
 <html>
   <head>
     <title>Soham Shantanu Aserkar</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   </head>
   <script>
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -16,19 +17,37 @@
   });
 </script>
   <body>
-    <header>
-      <h1>Soham Shantanu Aserkar</h1>
-      <nav>
-        <ul>
-          <li><a href="#" onclick="toggleVisibility('education')">Education</a></li>
-          <li><a href="#" onclick="toggleVisibility('skills')">Skills</a></li>
-          <li><a href="#" onclick="toggleVisibility('projects')">Projects</a></li>
-          <li><a href="#" onclick="toggleVisibility('experience')">Experience</a></li>
-          <li><a href="#" onclick="toggleVisibility('publications')">Publications</a></li>
-            <li><a href="#" onclick="toggleVisibility('leadership')">Leadership</a></li>
-        </ul>
-      </nav>
-    </header>
+    <header class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container">
+    <a class="navbar-brand" href="#">Soham Shantanu Aserkar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#education">Education</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#skills">Skills</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#projects">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#experience">Experience</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#publications">Publications</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#leadership">Leadership</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</header>
+
     <main>
       <section id="education" class="hidden">
         <h2>Education</h2>
@@ -146,15 +165,11 @@
 </ul>
 </section>
 </main>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/16.1.0/smooth-scroll.min.js"></script>
 <script>
-      function toggleVisibility(id) {
-        var el = document.getElementById(id);
-        if (el.classList.contains('hidden')) {
-          el.classList.remove('hidden');
-        } else {
-          el.classList.add('hidden');
-        }
-      }
-    </script>
+  var scroll = new SmoothScroll('a[href*="#"]', {
+    speed: 800
+  });
+</script>
   </body>
 </html>
