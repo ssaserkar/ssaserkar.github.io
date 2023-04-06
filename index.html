@@ -5,6 +5,16 @@
     <title>Soham Shantanu Aserkar</title>
     <link rel="stylesheet" href="style.css">
   </head>
+  <script>
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+        behavior: 'smooth'
+      });
+    });
+  });
+</script>
   <body>
     <header>
       <h1>Soham Shantanu Aserkar</h1>
