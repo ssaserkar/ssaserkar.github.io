@@ -1,16 +1,46 @@
 /* styles.css */
+
+/* General styling */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    color: #333;
     line-height: 1.6;
-    background: #f4f4f4;
 }
 
 header {
+    background: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header p {
+    margin: 0;
+    font-size: 1.2em;
+    color: #555;
+}
+
+header .contact-info {
+    margin-top: 10px;
+}
+
+header .contact-info a {
+    color: #333;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+nav {
     background: #333;
     color: #fff;
-    padding: 1rem 0;
+    padding: 10px 0;
     text-align: center;
 }
 
@@ -21,33 +51,80 @@ nav ul {
 
 nav ul li {
     display: inline;
-    margin: 0 10px;
+    margin: 0 15px;
 }
 
 nav ul li a {
     color: #fff;
     text-decoration: none;
+    font-size: 1.1em;
 }
 
-h1, h2, h3 {
-    color: #333;
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 20px;
 }
 
 section {
-    padding: 2rem;
-    margin: 1rem 0;
-    background: #fff;
+    padding: 20px 0;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
 }
 
 .timeline {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    border-left: 2px solid #ddd;
+    margin-left: 20px;
+    padding-left: 20px;
 }
 
-.timeline-event {
-    background: #e4e4e4;
-    margin: 10px 0;
-    padding: 1rem;
-    border-left: 5px
+.timeline-item {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.timeline-item:before {
+    content: '';
+    position: absolute;
+    left: -10px;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    background: #333;
+    border-radius: 50%;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    header p {
+        font-size: 1em;
+    }
 }
