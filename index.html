@@ -3,11 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Soham Aserkar - Robotics and AI Engineer</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Soham Aserkar - Robotics & AI Engineer</title>
+    <meta name="description" content="Soham Aserkar's professional portfolio showcasing expertise in robotics, AI, machine learning, and software development.">
+    <meta name="keywords" content="Soham Aserkar, robotics engineer, AI engineer, machine learning, deep learning, embedded systems, Python, C++, ROS, ROS2, Gazebo, AI, robotics, software development">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         body {
-            font-family: 'Roboto', sans-serif;
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             background: #f4f4f4;
@@ -15,209 +17,191 @@
         }
         header {
             background: url('header-bg.jpg') no-repeat center center/cover;
-            color: #fff;
-            padding: 2rem 0;
+            color: white;
             text-align: center;
-            position: relative;
+            padding: 60px 0;
         }
-        header h1, header p {
+        header h1 {
             margin: 0;
-            padding: 0.5rem;
-            background: rgba(0, 0, 0, 0.5);
-            display: inline-block;
+            font-size: 2.5em;
         }
-        nav {
-            background: #333;
-            padding: 1rem;
-            text-align: center;
-        }
-        nav a {
-            margin: 0 1rem;
-            text-decoration: none;
-            color: #fff;
-            font-weight: bold;
-            transition: color 0.3s, transform 0.3s;
-        }
-        nav a:hover {
-            color: #007BFF;
-            transform: scale(1.1);
+        header p {
+            font-size: 1.2em;
         }
         .container {
-            width: 80%;
+            width: 90%;
+            max-width: 1200px;
             margin: auto;
             overflow: hidden;
         }
         section {
-            background: #fff;
-            padding: 2rem;
-            margin: 1rem 0;
-            transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
+            padding: 20px 0;
+            border-bottom: 1px solid #ddd;
         }
-        section:hover {
-            transform: scale(1.02);
-            background-color: #e4e4e4;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        section:last-child {
+            border: none;
         }
         h2 {
-            text-align: center;
-            color: #333;
-        }
-        .icon {
-            color: #007BFF;
-            margin-right: 0.5rem;
+            font-size: 1.8em;
+            margin-bottom: 10px;
         }
         ul {
             list-style: none;
             padding: 0;
         }
         li {
-            background: #e4e4e4;
-            margin: 0.5rem 0;
-            padding: 1rem;
-            transition: background-color 0.3s, box-shadow 0.3s;
+            margin-bottom: 10px;
         }
-        li:hover {
-            background-color: #d4d4d4;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        .icon {
+            margin-right: 8px;
         }
-        footer {
-            text-align: center;
-            padding: 1rem 0;
-            background-color: #333;
-            color: #fff;
+        @media (max-width: 768px) {
+            header {
+                padding: 40px 0;
+            }
+            header h1 {
+                font-size: 2em;
+            }
+            header p {
+                font-size: 1em;
+            }
+            section {
+                padding: 15px 0;
+            }
+            h2 {
+                font-size: 1.5em;
+            }
         }
-        .contact-icon {
-            margin: 0 0.5rem;
-            color: #fff;
-            font-size: 1.5rem;
-            transition: color 0.3s, transform 0.3s;
+        @media (max-width: 480px) {
+            .container {
+                width: 95%;
+            }
+            header h1 {
+                font-size: 1.8em;
+            }
+            header p {
+                font-size: 0.9em;
+            }
+            h2 {
+                font-size: 1.2em;
+            }
         }
-        .contact-icon:hover {
-            color: #007BFF;
-            transform: scale(1.2);
+        a {
+            color: #333;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Soham Aserkar</h1>
-        <p>Robotics and AI Engineer</p>
+        <h1>Soham Shantanu Aserkar</h1>
+        <p>Robotics & AI Engineer</p>
     </header>
-    <nav>
-        <a href="#about">About Me</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#work-experience">Work Experience</a>
-        <a href="#education">Education</a>
-        <a href="#certifications">Certifications</a>
-        <a href="#contact">Contact</a>
-    </nav>
     <div class="container">
         <section id="about">
             <h2><i class="fas fa-user icon"></i>About Me</h2>
             <p id="about-content"></p>
         </section>
         <section id="skills">
-            <h2><i class="fas fa-cogs icon"></i>Skills</h2>
-            <ul id="skills-list" class="skills"></ul>
+            <h2><i class="fas fa-tools icon"></i>Skills</h2>
+            <ul id="skills-list"></ul>
         </section>
         <section id="projects">
             <h2><i class="fas fa-project-diagram icon"></i>Projects</h2>
-            <ul id="projects-list" class="projects"></ul>
+            <ul id="projects-list"></ul>
         </section>
         <section id="work-experience">
             <h2><i class="fas fa-briefcase icon"></i>Work Experience</h2>
-            <ul id="work-experience-list" class="work-experience"></ul>
+            <ul id="work-experience-list"></ul>
         </section>
         <section id="education">
             <h2><i class="fas fa-graduation-cap icon"></i>Education</h2>
-            <ul id="education-list" class="education"></ul>
+            <ul id="education-list"></ul>
         </section>
         <section id="certifications">
             <h2><i class="fas fa-certificate icon"></i>Certifications</h2>
-            <ul id="certifications-list" class="certifications"></ul>
+            <ul id="certifications-list"></ul>
         </section>
         <section id="contact">
-            <h2><i class="fas fa-envelope icon"></i>Contact</h2>
-            <ul id="contact-list" class="contact"></ul>
+            <h2><i class="fas fa-envelope icon"></i>Contact Information</h2>
+            <ul id="contact-list"></ul>
         </section>
     </div>
-    <footer>
-        <p>&copy; 2024 Soham Aserkar. All rights reserved.</p>
-        <a href="mailto:ssaserkar@wpi.edu" class="contact-icon"><i class="fas fa-envelope"></i></a>
-        <a href="https://www.linkedin.com/in/sohamaserkar" class="contact-icon"><i class="fab fa-linkedin"></i></a>
-        <a href="https://github.com/ssaserkar" class="contact-icon"><i class="fab fa-github"></i></a>
-    </footer>
     <script>
-        const aboutContent = "I am a dedicated Robotics and AI Engineer with a strong background in developing innovative solutions in both software and hardware domains. With a passion for advancing technology and a commitment to excellence, I aim to contribute significantly to the robotics and AI industry.";
-        
+        const aboutContent = "I am a Robotics and AI engineer with a passion for developing innovative solutions in the field of robotics, machine learning, and embedded systems. With a strong background in both software and hardware, I aim to leverage my skills to contribute to cutting-edge projects in the industry.";
+
         const skills = [
-            { category: "Programming Languages & Frameworks", items: ["Python", "C", "C++", "Git", "ROS", "ROS2", "Gazebo", "Docker", "Restful API", "Kubernetes", "UML", "SysML", "Linux"] },
+            { category: "Languages and Frameworks", items: ["Python", "C", "C++", "Git", "ROS", "ROS2", "Gazebo", "Docker", "Restful API", "Kubernetes", "UML", "SysML", "Linux"] },
             { category: "Machine Learning", items: ["CNN", "RNN", "LSTM", "NumPy", "SciPy", "Pandas", "SQL", "PyTorch", "TensorFlow", "Transformers", "LLM", "Attention"] },
             { category: "Electronics", items: ["Multiphase DC-DC converters", "Analog Circuit Design", "Altium", "Allegro", "LTSpice", "Sensors", "I2C", "SPI", "SMBus", "TCP/IP"] },
-            { category: "Simulation & Hardware", items: ["NI LabVIEW", "Teststand", "Veristand", "MATLAB", "Simulink", "Isaac Sim", "Jetson Orin Nano", "Arduino", "RTOS"] }
+            { category: "Simulation and Hardware", items: ["NI LabVIEW", "Teststand", "Veristand", "MATLAB", "Simulink", "Isaac Sim", "Jetson Orin Nano", "Arduino", "RTOS"] }
         ];
-        
+
         const projects = [
-            { name: "ChatterArm", description: "Integrated LangSAM with Generative Grasp CNN (GGCNN) to create a vision-language-action model in ROS2 and Gazebo. Processed RGB-D images to process Region of Interest mapping given a prompt, process depth maps and push to GGCNN. Optimized GGCNN for YCB Dataset and received Grasp Pose, Quality and width as input for the Franka Emika Panda Arm. Demonstrated in ROS2 Gazebo by integrating both pipelines as service-client by prompting ‘action’ and ‘target object’.", link: "https://github.com/ssaserkar/chatterarm" }
+            { name: "ChatterArm: Large Language Model Augmented Vision-based Grasping", description: "Integrated LangSAM with Generative Grasp CNN (GGCNN) to create a vision-language-action model in ROS2 and Gazebo. Processed RGB-D images to process Region of Interest mapping given a prompt, process depth maps and push to GGCNN.", link: "https://github.com/ssaserkar" },
+            { name: "Panoptic Segmentation on 3D LiDAR Point Cloud Data", description: "Converted 3D Point Cloud Image to 2D Spherical Projection to reduce dimensionality. Remodeled RangeNet++ for Semantic Segmentation, using Mask-RCNN for Instance Segmentation.", link: "https://github.com/ssaserkar" }
         ];
-        
+
         const workExperience = [
-            { company: "Renesas Electronics America", details: "Applications Engineer: Navigated the Multiphase DC-DC converter - Smart Power Stage (SPS) Product for automotive and server products. Integrated Python with LabVIEW via a TCP/IP persistent server, achieving a 50% speed boost in SMBus and I2C protocol. Developed end-to-end pipeline for thermal data with computer vision for heat anomaly detection, boosting detection by 20%." }
+            { company: "Systems Modeling and Engineering Research Lab, WPI", details: "Graduate Research Assistant: Investigated machine learning models to classify gaps in unstructured public policy documents, achieving a 0.79 F1 score. Fine-tuned BERT for NER and gap classification, enhancing accuracy by 20% with multi-headed attention and PEFT." },
+            { company: "Renesas Electronics America", details: "Applications Engineer: Navigated the Multiphase DC-DC converter - Smart Power Stage (SPS) Product for automotive and server products. Integrated Python with LabVIEW via a TCP/IP persistent server, achieving a 50% speed boost in SMBus and I2C protocol." }
         ];
-        
+
         const education = [
-            { degree: "Masters in Robotics Engineering", details: "Worcester Polytechnic Institute (WPI): Relevant Courses: Deep Learning, Human-Robot Interaction, Motion Planning, Model Based Systems Engineering" },
-            { degree: "Bachelors in Electrical and Communications Engineering", details: "University of Pune: Awarded “Best Outgoing Student of the Electrical and Communications Engineering Branch of 2020”. Relevant Courses: Machine Learning, Data Structures and Algorithms, Operating Systems, Object Oriented Programming" }
+            { degree: "Masters in Robotics Engineering", details: "Worcester Polytechnic Institute (WPI), 3.9/4.0. Relevant Courses: Deep Learning, Human-Robot Interaction, Motion Planning, Model Based Systems Engineering." },
+            { degree: "Bachelors in Electrical and Communications Engineering", details: "University of Pune, 3.45/4.0. Awarded “Best Outgoing Student of the Electrical and Communications Engineering Branch of 2020”. Relevant Courses: Machine Learning, Data Structures and Algorithms, Operating Systems, Object Oriented Programming." }
         ];
-        
+
         const certifications = [
-            { name: "Certification Name", details: "Certification Details" }
+            { name: "Certified Robotics Professional", details: "Awarded by Robotics Institute" }
         ];
-        
+
         const contact = [
             { type: "Phone", details: "508-762-7943" },
-            { type: "Email", details: "ssaserkar@wpi.edu" },
-            { type: "LinkedIn", details: "<a href='https://www.linkedin.com/in/sohamaserkar'>LinkedIn</a>" },
-            { type: "GitHub", details: "<a href='https://github.com/ssaserkar'>GitHub</a>" }
+            { type: "Email", details: "<a href='mailto:ssaserkar@wpi.edu'>ssaserkar@wpi.edu</a>" },
+            { type: "LinkedIn", details: "<a href='https://www.linkedin.com/in/sohamaserkar'><i class='fab fa-linkedin'></i> LinkedIn</a>" },
+            { type: "GitHub", details: "<a href='https://github.com/ssaserkar'><i class='fab fa-github'></i> GitHub</a>" }
         ];
-        
+
         document.getElementById('about-content').innerText = aboutContent;
-        
+
         skills.forEach(skill => {
             const category = document.createElement('li');
             category.innerHTML = `<strong>${skill.category}</strong>: ${skill.items.join(', ')}`;
             document.getElementById('skills-list').appendChild(category);
         });
-        
+
         projects.forEach(project => {
             const projectItem = document.createElement('li');
             projectItem.innerHTML = `<strong>${project.name}</strong>: ${project.description} <a href="${project.link}" target="_blank">[Git]</a>`;
             document.getElementById('projects-list').appendChild(projectItem);
         });
-        
-        workExperience.forEach(work => {
-            const workItem = document.createElement('li');
-            workItem.innerHTML = `<strong>${work.company}</strong>: ${work.details}`;
-            document.getElementById('work-experience-list').appendChild(workItem);
+
+        workExperience.forEach(job => {
+            const jobItem = document.createElement('li');
+            jobItem.innerHTML = `<strong>${job.company}</strong>: ${job.details}`;
+            document.getElementById('work-experience-list').appendChild(jobItem);
         });
-        
+
         education.forEach(edu => {
             const eduItem = document.createElement('li');
             eduItem.innerHTML = `<strong>${edu.degree}</strong>: ${edu.details}`;
             document.getElementById('education-list').appendChild(eduItem);
         });
-        
+
         certifications.forEach(cert => {
             const certItem = document.createElement('li');
             certItem.innerHTML = `<strong>${cert.name}</strong>: ${cert.details}`;
             document.getElementById('certifications-list').appendChild(certItem);
         });
-        
-        contact.forEach(cont => {
-            const contItem = document.createElement('li');
-            contItem.innerHTML = `<strong>${cont.type}</strong>: ${cont.details}`;
-            document.getElementById('contact-list').appendChild(contItem);
+
+        contact.forEach(info => {
+            const contactItem = document.createElement('li');
+            contactItem.innerHTML = `<strong>${info.type}</strong>: ${info.details}`;
+            document.getElementById('contact-list').appendChild(contactItem);
         });
     </script>
 </body>
