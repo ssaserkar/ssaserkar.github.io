@@ -3,100 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Soham Aserkar - Portfolio</title>
+    <meta name="description" content="Soham Aserkar's professional portfolio in robotics and AI. Highlighting key projects, achievements, and skills.">
+    <meta name="keywords" content="Soham Aserkar, robotics, AI, machine learning, computer vision, embedded systems, projects, portfolio">
+    <title>Soham Aserkar | Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="favicon.png">
 </head>
 <body>
     <header>
-        <h1>Soham Shantanu Aserkar</h1>
-        <p>AI Engineer | Robotics | Software Development</p>
-        <div class="contact-info">
-            <a href="tel:508-762-7943">508-762-7943</a> |
-            <a href="mailto:ssaserkar@wpi.edu">ssaserkar@wpi.edu</a> |
-            Worcester, MA |
-            <a href="https://www.linkedin.com/in/sohamaserkar" target="_blank">LinkedIn</a> |
-            <a href="https://github.com/ssaserkar" target="_blank">GitHub</a>
+        <div class="container">
+            <h1>Soham Shantanu Aserkar</h1>
+            <p>Robotics and AI Engineer</p>
+            <div class="contact-info">
+                <a href="tel:+15087627943">508-762-7943</a> | 
+                <a href="mailto:ssaserkar@wpi.edu">ssaserkar@wpi.edu</a> | 
+                <a href="https://linkedin.com/in/sohamaserkar" target="_blank">LinkedIn</a> | 
+                <a href="https://github.com/ssaserkar" target="_blank">GitHub</a>
+            </div>
         </div>
     </header>
-
     <nav>
         <ul>
             <li><a href="#about">About Me</a></li>
             <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
             <li><a href="#experience">Experience</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
-
-    <main>
-        <section id="about">
-            <h2>About Me</h2>
-            <p>I'm an AI Engineer specializing in robotics, software, and hardware development. My journey in this field has been marked by impactful roles and projects, which I aim to highlight here.</p>
-        </section>
-
-        <section id="timeline">
-            <h2>Timeline</h2>
-            <!-- Add timeline entries here -->
-        </section>
-
-        <section id="skills">
-            <h2>Skills</h2>
-            <ul>
-                <li><strong>Languages and Frameworks:</strong> Python, C, C++, Git, ROS, ROS2, Gazebo, Docker, Restful API, Kubernetes, UML, SysML, Linux</li>
-                <li><strong>Machine Learning:</strong> CNN, RNN, LSTM, NumPy, SciPy, Pandas, SQL, PyTorch, TensorFlow, Transformers, LLM, Attention</li>
-                <li><strong>Electronics:</strong> Multiphase DC-DC converters, Analog Circuit Design, Altium, Allegro, LTSpice, Sensors, I2C, SPI, SMBus, TCP/IP</li>
-                <li><strong>Simulation and Hardware:</strong> NI LabVIEW, Teststand, Veristand, MATLAB, Simulink, Isaac Sim, Jetson Orin Nano, Arduino, RTOS</li>
-            </ul>
-        </section>
-
-        <section id="projects">
-            <h2>Projects</h2>
-            <article>
-                <h3>ChatterArm</h3>
-                <p>Integrated LangSAM with Generative Grasp CNN (GGCNN) to create a vision-language-action model in ROS2 and Gazebo. <strong>Keywords:</strong> ROS2, VLM, Grasping</p>
-                <img src="images/chatterarm.jpg" alt="ChatterArm Project">
-            </article>
-            <article>
-                <h3>Surgical Robot Enhancement</h3>
-                <p>Enhanced UNet++ for Semantic Segmentation on CholecSeg8k, achieving 68% accuracy. <strong>Keywords:</strong> Python, 2D semantic segmentation, Unity 3D</p>
-                <img src="images/surgical_robot.jpg" alt="Surgical Robot Enhancement Project">
-            </article>
-        </section>
-
-        <section id="experience">
-            <h2>Experience</h2>
-            <div class="experience-entry">
+    <section id="about" class="container">
+        <h2>About Me</h2>
+        <p>I'm a dedicated Robotics and AI Engineer with a passion for creating innovative solutions. My journey includes significant roles such as an application engineering intern, graduate research assistant, and student branch chair of IEEE MIT College of Engineering. I specialize in machine learning, computer vision, and embedded systems.</p>
+    </section>
+    <section id="skills" class="container">
+        <h2>Skills</h2>
+        <ul>
+            <li><strong>Languages and Frameworks:</strong> Python, C, C++, Git, ROS, ROS2, Gazebo, Docker, Restful API, Kubernetes, UML, SysML, Linux</li>
+            <li><strong>Machine Learning:</strong> CNN, RNN, LSTM, NumPy, SciPy, Pandas, SQL, PyTorch, TensorFlow, Transformers, LLM, Attention</li>
+            <li><strong>Electronics:</strong> Multiphase DC-DC converters, Analog Circuit Design, Altium, Allegro, LTSpice, Sensors, I2C, SPI, SMBus, TCP/IP</li>
+            <li><strong>Simulation and Hardware:</strong> NI LabVIEW, Teststand, Veristand, MATLAB, Simulink, Isaac Sim, Jetson Orin Nano, Arduino, RTOS</li>
+        </ul>
+    </section>
+    <section id="experience" class="container">
+        <h2>Experience</h2>
+        <div class="timeline">
+            <div class="timeline-item">
                 <h3>Graduate Research Assistant</h3>
-                <p>Worcester Polytechnic Institute | Oct 2022 - May 2024</p>
-                <p>Investigated machine learning models to classify gaps in unstructured public policy documents, achieving a 0.79 F1 score.</p>
+                <h4>Worcester Polytechnic Institute | Oct 2022 - May 2024</h4>
+                <p>Investigated machine learning models to classify gaps in unstructured public policy documents, achieving a 0.79 F1 score. Fine-tuned BERT for NER and gap classification, enhancing accuracy by 20% with multi-headed attention and PEFT.</p>
             </div>
-            <div class="experience-entry">
-                <h3>Applications Engineer Intern</h3>
-                <p>Renesas Electronics America | May 2023 - Jan 2024</p>
-                <p>Navigated the Multiphase DC-DC converter - Smart Power Stage (SPS) Product for automotive and server products.</p>
+            <div class="timeline-item">
+                <h3>Applications Engineer</h3>
+                <h4>Renesas Electronics America | May 2023 - Jan 2024</h4>
+                <p>Navigated the Multiphase DC-DC converter - Smart Power Stage (SPS) Product for automotive and server products. Integrated Python with LabVIEW via a TCP/IP persistent server, achieving a 50% speed boost in SMBus and I2C protocol.</p>
             </div>
-            <!-- Add more experience entries here -->
-        </section>
-
-        <section id="contact">
-            <h2>Contact</h2>
-            <form action="submit_form.php" method="post">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
-                <button type="submit">Send</button>
-            </form>
-        </section>
-    </main>
-
+            <div class="timeline-item">
+                <h3>Associate Engineer</h3>
+                <h4>Eaton India Innovation Center (EIIC) | Apr 2021 - Aug 2022</h4>
+                <p>Developed a framework for automation using the Vector CAN Suite, NI Test Suite with the Hardware-in-Loop Testing team. Integrated Python and VectorCAST to automate the test case creation and execution saving 100+ hours for each release.</p>
+            </div>
+        </div>
+    </section>
+    <section id="education" class="container">
+        <h2>Education</h2>
+        <ul>
+            <li>
+                <strong>Worcester Polytechnic Institute (WPI)</strong> - Masters in Robotics Engineering (3.9/4.0), Aug 2022 - May 2024
+                <p>Relevant Courses: Deep Learning, Human-Robot Interaction, Motion Planning, Model Based Systems Engineering</p>
+            </li>
+            <li>
+                <strong>University of Pune</strong> - Bachelors in Electrical and Communications Engineering (3.45/4.0), Aug 2016 - May 2020
+                <p>Awarded “Best Outgoing Student of the Electrical and Communications Engineering Branch of 2020”. Relevant Courses: Machine Learning, Data Structures and Algorithms, Operating Systems, Object Oriented Programming</p>
+            </li>
+        </ul>
+    </section>
+    <section id="projects" class="container">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>ChatterArm: Large Language Model Augmented Vision-based Grasping</h3>
+            <p>Integrated LangSAM with Generative Grasp CNN (GGCNN) to create a vision-language-action model in ROS2 and Gazebo. Processed RGB-D images to process Region of Interest mapping given a prompt, process depth maps and push to GGCNN.</p>
+            <img src="chatterarm.jpg" alt="ChatterArm project image">
+            <p><a href="https://github.com/ssaserkar/chatterarm" target="_blank">View on GitHub</a></p>
+        </div>
+        <div class="project">
+            <h3>Panoptic Segmentation on 3D LiDAR Point Cloud Data</h3>
+            <p>Converted 3D Point Cloud Image to 2D Spherical Projection to reduce dimensionality. Remodeled RangeNet++ for Semantic Segmentation, using Mask-RCNN for Instance Segmentation.</p>
+            <img src="lidar_segmentation.jpg" alt="Panoptic Segmentation project image">
+            <p><a href="https://github.com/ssaserkar/panoptic-segmentation" target="_blank">View on GitHub</a></p>
+        </div>
+    </section>
+    <section id="contact" class="container">
+        <h2>Contact</h2>
+        <p>If you would like to get in touch, please reach out via <a href="mailto:ssaserkar@wpi.edu">email</a> or connect with me on <a href="https://linkedin.com/in/sohamaserkar" target="_blank">LinkedIn</a>.</p>
+    </section>
     <footer>
-        <p>&copy; 2024 Soham Aserkar. All rights reserved.</p>
+        <p>&copy; 2024 Soham Shantanu Aserkar</p>
     </footer>
-
     <script src="scripts.js"></script>
 </body>
 </html>
