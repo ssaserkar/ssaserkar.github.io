@@ -128,3 +128,57 @@ nav ul li a:hover {
     padding: 20px;
     margin: 20px 0;
     border-radius: 5px;
+}
+
+/* Contact Section */
+#contact {
+padding: 30px 0;
+background: #fff;
+}
+
+#contact form {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+#contact input, #contact textarea {
+width: 80%;
+margin-bottom: 15px;
+padding: 10px;
+border: 1px solid #ccc;
+border-radius: 5px;
+}
+
+#contact button {
+width: 50%;
+padding: 10px;
+background: #ff6600;
+color: #fff;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+}
+
+#contact button
+{
+background: #e55b00;
+}
+
+/* Footer */
+footer {
+padding: 20px 0;
+text-align: center;
+background: #333;
+color: #fff;
+}
+
+footer a {
+color: #ff6600;
+text-decoration: none;
+}
+
+footer a
+{
+text-decoration: underline;
+}
