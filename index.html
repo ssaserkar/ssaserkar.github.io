@@ -3,103 +3,120 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Soham Aserkar's professional portfolio highlighting his journey in robotics, AI, and engineering.">
-    <title>Soham Aserkar's Portfolio</title>
+    <meta name="description" content="Soham Shantanu Aserkar's Portfolio - Robotics, AI, and Electronics">
+    <title>Soham Shantanu Aserkar | Portfolio</title>
     <link rel="stylesheet" href="styles.css">
-    <script defer src="script.js"></script>
 </head>
 <body>
     <header>
-        <div class="logo">
-            <h1>Soham Aserkar</h1>
-            <p>AI Engineer | Robotics Enthusiast | Innovator</p>
+        <div class="container">
+            <h1>Soham Shantanu Aserkar</h1>
+            <p>Robotics Engineer | AI Enthusiast | Electronics Expert</p>
+            <nav>
+                <ul>
+                    <li><a href="#" onclick="navigateToCategory('robotics')">Robotics</a></li>
+                    <li><a href="#" onclick="navigateToCategory('electronics')">Electronics</a></li>
+                    <li><a href="#" onclick="navigateToCategory('ai')">AI</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
         </div>
-        <nav>
-            <ul class="nav-menu">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <div class="nav-toggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </nav>
     </header>
-    <main>
-        <section id="home" class="container">
-            <h2>My Journey</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <h3>Undergraduate Studies</h3>
-                    <p><strong>Roles:</strong> General Secretary, Student Council; Best Outgoing Student Award; Student Branch Chair, IEEE MIT College of Engineering</p>
-                </div>
-                <div class="timeline-item">
-                    <h3>Graduate Studies</h3>
-                    <p><strong>Roles:</strong> Graduate Research Assistant</p>
-                    <p><strong>Projects:</strong> ChatterArm, Surgical Robot Enhancement</p>
-                </div>
-                <div class="timeline-item">
-                    <h3>Professional Experience</h3>
-                    <p><strong>Roles:</strong> Application Engineering Intern</p>
-                    <p><strong>Projects:</strong> Various Industry Projects</p>
-                </div>
-            </div>
-        </section>
 
-        <section id="about" class="container">
+    <section id="about">
+        <div class="container">
             <h2>About Me</h2>
-            <p>I am an AI engineer with a passion for robotics and innovation. With a background in both hardware and software, I strive to bridge the gap between technology and real-world applications.</p>
-        </section>
+            <p>
+                I am a passionate Robotics Engineer with a strong background in AI and Electronics. My goal is to innovate and develop cutting-edge technologies that solve real-world problems.
+            </p>
+        </div>
+    </section>
 
-        <section id="skills" class="container">
+    <section id="skills">
+        <div class="container">
             <h2>Skills</h2>
-            <ul>
-                <li>Robotics</li>
-                <li>AI and Machine Learning</li>
-                <li>Embedded Systems</li>
-                <li>Python, C++</li>
-                <li>ROS, ROS2</li>
-                <li>Computer Vision</li>
-            </ul>
-        </section>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <h3>Programming Languages & Frameworks</h3>
+                    <p>Python, C, C++, MATLAB, TensorFlow, PyTorch, ROS, ROS2, Gazebo, Docker, SysML, GCP</p>
+                </div>
+                <div class="skill-item">
+                    <h3>Simulation & Hardware</h3>
+                    <p>Arduino, Jetson Orin Nano, Isaac Sim, COMSOL, NI LabVIEW, Simulink, Altium, LTSpice</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <section id="projects" class="container">
+    <section id="projects">
+        <div class="container">
             <h2>Projects</h2>
-            <div class="project">
-                <h3>ChatterArm</h3>
-                <p>Developed a robot to assist the elderly in accessing hard-to-reach places. <a href="#" class="expand-details" data-target="chatterarm-details">More details</a></p>
-                <div id="chatterarm-details" class="project-details">
-                    <p>Technical details, images, and in-depth information about ChatterArm.</p>
-                    <p><a href="https://github.com/sohamaserkar/chatterarm">View on GitHub</a></p>
-                </div>
-            </div>
-            <div class="project">
-                <h3>Surgical Robot Enhancement</h3>
-                <p>Enhanced surgical robots to help young surgeons learn and operate more efficiently. <a href="#" class="expand-details" data-target="surgical-details">More details</a></p>
-                <div id="surgical-details" class="project-details">
-                    <p>Technical details, images, and in-depth information about Surgical Robot Enhancement.</p>
-                    <p><a href="https://github.com/sohamaserkar/surgical-robot-enhancement">View on GitHub</a></p>
-                </div>
-            </div>
-        </section>
 
-        <section id="experience" class="container">
+            <!-- Robotics Projects -->
+            <div id="robotics-projects" class="project-category">
+                <h3>Robotics</h3>
+                <div class="project-item">
+                    <h4>ChatterArm: Large Language Model Augmented Vision-based Grasping</h4>
+                    <p>Unified LangSAM with GGCNN for deployment as a vision-language-action model in ROS2/Gazebo.</p>
+                    <a href="https://github.com/ssaserkar/ChatterArm" target="_blank">View Project</a>
+                </div>
+                <!-- Additional Robotics projects -->
+            </div>
+
+            <!-- Electronics Projects -->
+            <div id="electronics-projects" class="project-category">
+                <h3>Electronics</h3>
+                <div class="project-item">
+                    <h4>Autonomous Quadruped & Holonomic Drive - Robocon 2019</h4>
+                    <p>Mentored a team to design an autonomous quadruped robot and a manual 3-wheel holonomic drive.</p>
+                    <a href="https://github.com/ssaserkar/Robocon2019" target="_blank">View Project</a>
+                </div>
+                <!-- Additional Electronics projects -->
+            </div>
+
+            <!-- AI Projects -->
+            <div id="ai-projects" class="project-category">
+                <h3>Artificial Intelligence</h3>
+                <div class="project-item">
+                    <h4>Panoptic Segmentation on 3D LiDAR Point Cloud Data</h4>
+                    <p>Developed UPSNet-based panoptic segmentation pipeline using RangeNet++ and Mask R-CNN.</p>
+                    <a href="https://github.com/ssaserkar/LiDAR-Segmentation" target="_blank">View Project</a>
+                </div>
+                <!-- Additional AI projects -->
+            </div>
+
+        </div>
+    </section>
+
+    <section id="experience">
+        <div class="container">
             <h2>Experience</h2>
-            <p>Details about professional roles and contributions.</p>
-        </section>
+            <div class="experience-item">
+                <h3>Systems Modeling and Engineering Research Lab (WPI)</h3>
+                <p>Graduate Research Assistant - NLP, developed custom BERT models for public policy analysis.</p>
+            </div>
+            <!-- Additional Experience entries -->
+        </div>
+    </section>
 
-        <section id="contact" class="container">
-            <h2>Contact</h2>
-            <p>Get in touch with me at <a href="mailto:soham@example.com">soham@example.com</a>.</p>
-        </section>
-    </main>
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form action="mailto:ssaserkar@wpi.edu" method="post" enctype="text/plain">
+                <input type="text" name="name" id="contact-name" placeholder="Your Name" required>
+                <input type="email" name="email" id="contact-email" placeholder="Your Email" required>
+                <textarea name="message" id="contact-message" rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
     <footer>
-        <p>&copy; 2024 Soham Aserkar. All rights reserved.</p>
+        <div class="container">
+            <p>&copy; 2024 Soham Shantanu Aserkar | <a href="https://www.linkedin.com/in/sohamaserkar" target="_blank">LinkedIn</a> | <a href="https://github.com/ssaserkar" target="_blank">GitHub</a></p>
+        </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
